@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class App {
 	public static void main(String[] args) throws FileNotFoundException {
 		String cwd = System.getProperty("user.dir");
-		File file = new File(cwd + "\\input.txt");
+		File file = new File(cwd + "/input.txt");
 		Scanner sc = new Scanner(file);
 		RoadMap roadMap = new RoadMap();
 
