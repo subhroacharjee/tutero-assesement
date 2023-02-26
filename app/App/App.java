@@ -17,6 +17,8 @@ public class App {
 			if (line.length() == 0) continue;
 			roadMap.addMapping(line);
 		}
-		System.out.println(roadMap.getLinearOrderOfSkills());
+		for(String s: roadMap.getLinearOrderOfSkills()) {
+			System.out.println(s);
+		}
 	}
 }
