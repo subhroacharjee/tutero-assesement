@@ -2,7 +2,7 @@ name: Test
 
 on: 
   pull_request:
-    types: ["created", "closed", "reopened", "review_requested", "edited"]
+    types: ["opened", "closed", "reopened", "review_requested", "edited"]
   pull_request_review:
     types: "submitted"
   pull_request_review_comment:
