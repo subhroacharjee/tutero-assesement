@@ -14,5 +14,5 @@ jobs:
         uses: MathGaps/notion-issue-sync@main
         with:
           webhook: ${{ secrets.GITHUB_WEBHOOK}}
-          event: ${{ github.event }}
+          event: ${{ toJSON(github.event) }}
           token: ${{ secrets.GITHUB_TOKEN }}
