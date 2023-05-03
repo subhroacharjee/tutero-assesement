@@ -4,9 +4,7 @@ on:
   pull_request:
     types: ["created", "closed", "reopened", "review_requested", "edited"]
   pull_request_review:
-    types: "*"
-  pull_request_review_comment:
-    types: "*"
+    types: "submitted"
 
 jobs:
 
