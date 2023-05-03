@@ -11,7 +11,7 @@ jobs:
     name: Annotates pull request with metadata
     steps:
       - name: Annotate PR
-        uses: link-/notion-issue-sync@main
+        uses: MathGaps/notion-issue-sync@main
         with:
           webhook: ${{ secrets.GITHUB_WEBHOOK}}
           event: ${{ github.event }}
