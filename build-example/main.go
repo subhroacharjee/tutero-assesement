@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println(
 		strings.Join([]string{
-			"A", "B", "D", "C",
+			"A", "B", "D", "C", "E"
 		}, "\n"),
 	)
 }
