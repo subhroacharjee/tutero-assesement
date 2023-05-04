@@ -2,7 +2,7 @@ name: Test
 
 on: 
   pull_request:
-    types: ["opened", "closed", "reopened", "review_requested", "edited"]
+    types: ["opened", "closed", "reopened"]
   pull_request_review:
     types: "submitted"
   pull_request_review_comment:
@@ -17,6 +17,6 @@ jobs:
       - name: Annotate PR
         uses: subhroacharjee/my-test-action@main
         with:
-          webhook: ${{ secrets.GITHUB_WEBHOOK}}
+          webhook: ${{ vars.WEBHOOK }}
           event: ${{ toJSON(github.event) }}
           token: ${{ secrets.GITHUB_TOKEN }}
