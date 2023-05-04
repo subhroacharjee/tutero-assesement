@@ -14,9 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Annotates pull request with metadata
     steps:
-      - name: Annotate PR
-        uses: subhroacharjee/my-test-action@main
-        with:
-          webhook: ${{ vars.WEBHOOK }}
-          event: ${{ toJSON(github.event) }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: print webook
+        run: echo ${{ vars.REPOSITORY_WEBOOK }}
+#       - name: Annotate PR
+#         uses: subhroacharjee/my-test-action@main
+#         with:
+#           webhook: ${{ vars.REPOSITORY_WEBHOOK }}
+#           event: ${{ toJSON(github.event) }}
+#           token: ${{ secrets.GITHUB_TOKEN }}
