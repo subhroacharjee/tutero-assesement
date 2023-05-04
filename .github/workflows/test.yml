@@ -15,7 +15,7 @@ jobs:
     name: Annotates pull request with metadata
     steps:
       - name: print webook
-        run: echo ${{ vars.REPOSITORY_WEBOOK }}
+        run: echo ${{ vars.WEBOOK }}
 #       - name: Annotate PR
 #         uses: subhroacharjee/my-test-action@main
 #         with:
