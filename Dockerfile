@@ -22,6 +22,7 @@ COPY ./app/ .
 # Copying input.txt
 Copy ./input.txt .
 # #Compiling source
+RUN echo "Hello world"
 RUN javac ./App/App.java
 #Execution
 CMD ["java", "App/App" ]
