@@ -14,11 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Annotates pull request with metadata
     steps:
-      - name: print webook
-        run: echo ${{ secrets.WEBOOK }}
-#       - name: Annotate PR
-#         uses: subhroacharjee/my-test-action@main
-#         with:
-#           webhook: ${{ vars.REPOSITORY_WEBHOOK }}
-#           event: ${{ toJSON(github.event) }}
-#           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update notion status
+        uses: subhroacharjee/my-test-action@main
+        with:
+          webhook: ${{ secrets.WEBHOOK }}
+          event: ${{ toJSON(github.event) }}
+          token: ${{ secrets.GITHUB_TOKEN }}
